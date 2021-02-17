@@ -1,11 +1,10 @@
-pipeline {
-    agent any 
-    tools {
-        maven 'maven'
-    }
+pipeline{
+    agent any
     stages{
-        stage('Build stage') {
-             sh  'mvn clean package'
+        stage('Build'){
+            steps{
+                ' mvn clean package '
+            }
         }
     }
-}
+} 
